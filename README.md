@@ -18,8 +18,38 @@ When done print "File copied successfully"
 ### Step 6: 
 End the program
 ## PROGRAM:
-![](5c1.png)
+```'''
+#Program to copy the file.
+#Developed by: GUTTHA KEERTHANA
+#RegisterNumber: 212223240045
+'''
+print("Enter the name of source file: ")
+
+sFile=input()
+
+print("Enter the name of target file: ")
+
+tFile=input()
+
+fileHandle=open(sFile,"r")
+
+texts=fileHandle.readlines()
+
+fileHandle.close()
+
+fileHandle=open(tFile, "w")
+
+for s in texts:
+
+    fileHandle.write(s)
+
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
+
+```
 ### OUTPUT:
+![](5c1.png)
 ![](5c2.png)
 
 
